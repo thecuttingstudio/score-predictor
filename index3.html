@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IPL Match Predictor Pro</title>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🏏 IPL Match Predictor</h1>
+
+    <h3>Team A (1st Innings)</h3>
+    <input type="number" id="teamAScore" placeholder="Team A Total Score">
+
+    <h3>Team B (Chasing)</h3>
+    <input type="number" id="teamBRuns" placeholder="Current Runs">
+    <input type="number" id="teamBOvers" placeholder="Overs Completed">
+    <input type="number" id="teamBWickets" placeholder="Wickets Lost">
+
+    <button onclick="predictMatch()">Predict Result</button>
+
+    <div class="probability-box">
+        <div id="winBar"></div>
+    </div>
+
+    <h2 id="result"></h2>
+    <h3 id="status"></h3>
+
+    <div id="trophy" class="trophy">🏆</div>
+
+    <audio id="cheerSound" src="https://www.soundjay.com/human/cheering-01.mp3"></audio>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="scriptt.js"></script>
+</body>
+</html>
